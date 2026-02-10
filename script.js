@@ -3,6 +3,8 @@ const packages = [
     id: "goa-family-retreat",
     name: "Goa Family Beach Retreat",
     destination: "Goa, India",
+    image:
+      "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=1200&q=80",
     type: "beach",
     audience: ["family", "kids"],
     vibe: ["relax", "beach", "sunset", "leisure"],
@@ -17,13 +19,15 @@ const packages = [
       afternoon: "Best for indoor attractions, cafes, and museums.",
       evening: "Perfect for sunset cruises and beach dining.",
     },
-    basePricePerPerson: 320,
+    basePricePerPerson: 18000,
     highlights: ["Beachfront 4★ stay", "Island cruise", "Kids friendly water sports"],
   },
   {
     id: "himachal-adventure-trail",
     name: "Himachal Adventure Trail",
     destination: "Manali & Kasol, Himachal",
+    image:
+      "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1200&q=80",
     type: "adventure",
     audience: ["friends", "solo"],
     vibe: ["trek", "camp", "adventure", "mountains"],
@@ -38,13 +42,15 @@ const packages = [
       afternoon: "Use afternoons for local cafe stops and rest.",
       evening: "Good for campsite bonfire and relaxed walks.",
     },
-    basePricePerPerson: 250,
+    basePricePerPerson: 13500,
     highlights: ["Guided trek", "Camping under stars", "River rafting"],
   },
   {
     id: "kerala-luxury-escape",
     name: "Kerala Luxury Backwater Escape",
     destination: "Alleppey & Munnar, Kerala",
+    image:
+      "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=1200&q=80",
     type: "honeymoon",
     audience: ["couple", "honeymoon"],
     vibe: ["romantic", "luxury", "relax", "nature"],
@@ -59,13 +65,15 @@ const packages = [
       afternoon: "Best for spa, wellness, and houseboat relaxation.",
       evening: "Ideal for romantic dinners and sunset lake rides.",
     },
-    basePricePerPerson: 540,
+    basePricePerPerson: 32000,
     highlights: ["Private houseboat", "Spa & candlelight dinner", "5★ resort stay"],
   },
   {
     id: "dubai-city-highlights",
     name: "Dubai City Highlights",
     destination: "Dubai, UAE",
+    image:
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80",
     type: "city",
     audience: ["family", "friends", "couple"],
     vibe: ["shopping", "city", "luxury", "sightseeing"],
@@ -80,13 +88,15 @@ const packages = [
       afternoon: "Ideal for indoor attractions and shopping malls.",
       evening: "Best for desert safari and skyline views.",
     },
-    basePricePerPerson: 610,
+    basePricePerPerson: 45000,
     highlights: ["Burj Khalifa tickets", "Desert safari", "Luxury hotel stay"],
   },
   {
     id: "rishikesh-budget-reset",
     name: "Rishikesh Budget Reset",
     destination: "Rishikesh, Uttarakhand",
+    image:
+      "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=1200&q=80",
     type: "mountain",
     audience: ["solo", "friends", "wellness"],
     vibe: ["yoga", "peace", "mountain", "budget"],
@@ -101,13 +111,15 @@ const packages = [
       afternoon: "Relax in cafes, wellness centers, or local markets.",
       evening: "Best time for Ganga aarti and calm walks.",
     },
-    basePricePerPerson: 170,
+    basePricePerPerson: 9000,
     highlights: ["Yoga sessions", "Ganga aarti", "Riverside camp"],
   },
   {
     id: "ranthambore-wildlife-special",
     name: "Ranthambore Wildlife Special",
     destination: "Ranthambore, Rajasthan",
+    image:
+      "https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=1200&q=80",
     type: "wildlife",
     audience: ["family", "friends"],
     vibe: ["safari", "wildlife", "photography", "nature"],
@@ -122,8 +134,54 @@ const packages = [
       afternoon: "Often warmer; suitable for rest and photography reviews.",
       evening: "Second best safari slot with beautiful golden light.",
     },
-    basePricePerPerson: 290,
+    basePricePerPerson: 15000,
     highlights: ["Jeep safari", "Naturalist guide", "Heritage stay"],
+  },
+  {
+    id: "andaman-island-delight",
+    name: "Andaman Island Delight",
+    destination: "Port Blair & Havelock, Andaman",
+    image:
+      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+    type: "beach",
+    audience: ["couple", "family"],
+    vibe: ["beach", "snorkeling", "relax", "island"],
+    budget: "premium",
+    minDays: 5,
+    maxDays: 7,
+    bestMonths: [10, 11, 12, 1, 2, 3, 4],
+    idealVisitTime: ["morning", "evening"],
+    visitTimeTips: {
+      "early-morning": "Great for peaceful beach walks and sunrise photos.",
+      morning: "Best slot for snorkeling and marine activities.",
+      afternoon: "Use for resort leisure and local cafes.",
+      evening: "Perfect for beach sunset and seafood dining.",
+    },
+    basePricePerPerson: 38000,
+    highlights: ["Scuba intro dive", "Private beach resort", "Island hopping"],
+  },
+  {
+    id: "jaipur-heritage-break",
+    name: "Jaipur Heritage Break",
+    destination: "Jaipur, Rajasthan",
+    image:
+      "https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1200&q=80",
+    type: "city",
+    audience: ["family", "friends", "couple"],
+    vibe: ["culture", "fort", "food", "city"],
+    budget: "standard",
+    minDays: 3,
+    maxDays: 5,
+    bestMonths: [10, 11, 12, 1, 2, 3],
+    idealVisitTime: ["morning", "evening"],
+    visitTimeTips: {
+      "early-morning": "Good for cool-weather fort exploration.",
+      morning: "Best for sightseeing at Amer Fort and City Palace.",
+      afternoon: "Ideal for museum tours and local cuisine stops.",
+      evening: "Perfect for markets and cultural shows.",
+    },
+    basePricePerPerson: 16000,
+    highlights: ["Amer Fort tour", "Heritage haveli stay", "Local food walk"],
   },
 ];
 
@@ -147,6 +205,7 @@ const tripForm = document.getElementById("tripForm");
 const result = document.getElementById("result");
 const year = document.getElementById("year");
 const startDateInput = document.getElementById("startDate");
+const packageGrid = document.getElementById("packageGrid");
 
 year.textContent = new Date().getFullYear();
 startDateInput.valueAsDate = new Date();
@@ -224,9 +283,9 @@ function calculateScore(pkg, userInput) {
 }
 
 function formatCurrency(amount) {
-  return new Intl.NumberFormat("en-US", {
+  return new Intl.NumberFormat("en-IN", {
     style: "currency",
-    currency: "USD",
+    currency: "INR",
     maximumFractionDigits: 0,
   }).format(amount);
 }
@@ -254,13 +313,33 @@ function createTripItinerary(userInput, recommendation) {
     } else if (day === userInput.days) {
       planLine += "Leisure morning, shopping/local food, and departure.";
     } else {
-      planLine += recommendation.highlights[(day - 2) % recommendation.highlights.length] + ".";
+      planLine += `${recommendation.highlights[(day - 2) % recommendation.highlights.length]}.`;
     }
 
     lines.push(planLine);
   }
 
   return lines;
+}
+
+function renderPackageCards() {
+  packageGrid.innerHTML = packages
+    .map(
+      (pkg) => `
+      <article class="package-card">
+        <img src="${pkg.image}" alt="${pkg.name}" loading="lazy" />
+        <div class="package-body">
+          <h3>${pkg.name}</h3>
+          <p>${pkg.destination}</p>
+          <div class="meta">
+            <span class="tag">${pkg.type}</span>
+            <span class="tag">${pkg.budget}</span>
+            <span class="tag">From ${formatCurrency(pkg.basePricePerPerson)} / person</span>
+          </div>
+        </div>
+      </article>`,
+    )
+    .join("");
 }
 
 function renderRecommendation(recommendation, userInput) {
@@ -275,6 +354,7 @@ function renderRecommendation(recommendation, userInput) {
   result.classList.remove("hidden");
   result.innerHTML = `
     <h3>✨ Your Best Package: ${recommendation.name}</h3>
+    <img class="result-image" src="${recommendation.image}" alt="${recommendation.name}" />
     <p>${aiText}</p>
     <p><strong>Estimated Total:</strong> ${formatCurrency(total)} for ${userInput.travelers} traveler(s)</p>
     <p><strong>Highlights:</strong> ${recommendation.highlights.join(" • ")}</p>
@@ -332,3 +412,5 @@ tripForm.addEventListener("submit", (event) => {
 
   renderRecommendation(bestMatch, userInput);
 });
+
+renderPackageCards();

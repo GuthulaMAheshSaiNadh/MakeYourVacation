@@ -5,9 +5,9 @@ A user-friendly tours and travel web application with an AI-inspired package rec
 ## Features
 
 - Clean and responsive landing page for the **MakeYourVacation** brand
-- AI-style recommendation engine using description, budget, trip type, and travelers
-- Season-aware package scoring based on selected travel **date**
-- Place-aware suggestions with destination, best months, and visiting-time tips
+- AI-style recommendation engine using description, budget, trip type, travelers, season, and dates
+- Currency shown in **Indian Rupees (INR)** for package pricing and recommendations
+- Destination package gallery with images for a richer browsing experience
 - Day-wise itinerary generation using selected start date and preferred visiting time
 
 ## Run locally
