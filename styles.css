@@ -1,5 +1,4 @@
 :root {
-  --bg: #f3f7ff;
   --text: #12263f;
   --primary: #1669f2;
   --primary-dark: #0f4bb3;
@@ -25,7 +24,7 @@ body {
 }
 
 .hero {
-  padding: 1.5rem 0 4rem;
+  padding: 1.5rem 0 3rem;
 }
 
 .nav {
@@ -48,7 +47,7 @@ body {
 .hero-content {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1.4fr 1fr;
   gap: 2rem;
   align-items: center;
 }
@@ -64,7 +63,7 @@ body {
 }
 
 h1 {
-  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-size: clamp(2rem, 5vw, 3.1rem);
   line-height: 1.1;
   margin: 0;
 }
@@ -93,7 +92,6 @@ h1 {
 
 .hero-card,
 .planner,
-.feature,
 .result {
   background: var(--card);
   border: 1px solid var(--border);
@@ -112,7 +110,7 @@ h1 {
 }
 
 .planner {
-  margin: 1rem auto;
+  margin: 1rem auto 3rem;
   padding: 1.25rem;
 }
 
@@ -139,6 +137,7 @@ input {
   border-radius: 0.7rem;
   padding: 0.75rem;
   font: inherit;
+  background: #fff;
 }
 
 textarea:focus,
@@ -167,7 +166,8 @@ input:focus {
   margin-top: 0;
 }
 
-.meta {
+.meta,
+.season-box {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem;
@@ -183,19 +183,16 @@ input:focus {
   font-weight: 600;
 }
 
-.features {
-  margin: 2.2rem auto 3rem;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+.itinerary {
+  margin-top: 1rem;
+  border-top: 1px dashed var(--border);
+  padding-top: 0.8rem;
 }
 
-.feature {
-  padding: 1rem;
-}
-
-.feature p {
-  color: var(--muted);
+.itinerary ol {
+  margin: 0.6rem 0 0;
+  padding-left: 1.2rem;
+  color: #1f3e65;
 }
 
 footer {
@@ -206,10 +203,6 @@ footer {
 
 @media (max-width: 900px) {
   .hero-content,
-  .features {
-    grid-template-columns: 1fr;
-  }
-
   .grid {
     grid-template-columns: 1fr;
   }

@@ -24,7 +24,7 @@
           <h1>Design your perfect trip in minutes.</h1>
           <p class="subtitle">
             Tell us your dream holiday, and our AI assistant recommends the best
-            package for your budget, style, and duration.
+            package for your budget, season, travel dates, and visiting time.
           </p>
           <a class="button" href="#planner">Get My Package</a>
         </div>
@@ -32,8 +32,8 @@
           <h2>Why travelers love us</h2>
           <ul>
             <li>Smart package matching from your description</li>
-            <li>Family, adventure, luxury, and budget options</li>
-            <li>Clear pricing and highlights</li>
+            <li>Season-aware planning with date-based recommendations</li>
+            <li>Daily visit-time suggestions and clear trip highlights</li>
           </ul>
         </div>
       </div>
@@ -82,6 +82,11 @@
             </label>
 
             <label>
+              Start date
+              <input id="startDate" type="date" required />
+            </label>
+
+            <label>
               Duration (days)
               <input id="days" type="number" min="2" max="14" value="5" required />
             </label>
@@ -90,27 +95,23 @@
               Travelers
               <input id="travelers" type="number" min="1" max="10" value="2" required />
             </label>
+
+            <label>
+              Preferred visiting time
+              <select id="visitTime" required>
+                <option value="">Choose time</option>
+                <option value="early-morning">Early morning</option>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+              </select>
+            </label>
           </div>
 
           <button class="button" type="submit">Recommend My Package</button>
         </form>
 
         <article id="result" class="result hidden" aria-live="polite"></article>
-      </section>
-
-      <section class="features container">
-        <div class="feature">
-          <h3>Smart matching</h3>
-          <p>AI analyzes your description and priorities to suggest the most suitable plan.</p>
-        </div>
-        <div class="feature">
-          <h3>Flexible packages</h3>
-          <p>Options for solo trips, couples, families, and groups with transparent pricing.</p>
-        </div>
-        <div class="feature">
-          <h3>User-friendly journey</h3>
-          <p>Simple interface, fast recommendations, and clear itinerary highlights.</p>
-        </div>
       </section>
     </main>
 

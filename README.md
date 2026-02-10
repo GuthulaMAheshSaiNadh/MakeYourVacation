@@ -4,10 +4,11 @@ A user-friendly tours and travel web application with an AI-inspired package rec
 
 ## Features
 
-- Clean and responsive landing page for a travel brand named **MakeYourVacation**
-- AI-style recommendation engine that chooses the best package from user description and inputs
-- Inputs for budget, trip type, duration, and number of travelers
-- Highlighted package details with estimated total pricing
+- Clean and responsive landing page for the **MakeYourVacation** brand
+- AI-style recommendation engine using description, budget, trip type, and travelers
+- Season-aware package scoring based on selected travel **date**
+- Place-aware suggestions with destination, best months, and visiting-time tips
+- Day-wise itinerary generation using selected start date and preferred visiting time
 
 ## Run locally
 
