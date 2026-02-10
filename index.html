@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MakeYourVacation | AI Tours & Travel Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <div class="logo">MakeYourVacation</div>
+        <a class="cta-link" href="#planner">Plan with AI</a>
+      </nav>
+      <div class="container hero-content">
+        <div>
+          <p class="badge">AI-powered Tours & Travel</p>
+          <h1>Design your perfect trip in minutes.</h1>
+          <p class="subtitle">
+            Tell us your dream holiday, and our AI assistant recommends the best
+            package for your budget, style, and duration.
+          </p>
+          <a class="button" href="#planner">Get My Package</a>
+        </div>
+        <div class="hero-card">
+          <h2>Why travelers love us</h2>
+          <ul>
+            <li>Smart package matching from your description</li>
+            <li>Family, adventure, luxury, and budget options</li>
+            <li>Clear pricing and highlights</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="planner" class="planner container">
+        <div class="section-head">
+          <h2>AI Travel Planner</h2>
+          <p>Share your preferences and get your best package recommendation.</p>
+        </div>
+
+        <form id="tripForm" class="trip-form" autocomplete="off">
+          <label>
+            Describe your ideal trip
+            <textarea
+              id="description"
+              rows="4"
+              placeholder="Example: I want a relaxing 5-day beach vacation for my family with good hotels and activities for kids."
+              required
+            ></textarea>
+          </label>
+
+          <div class="grid">
+            <label>
+              Budget
+              <select id="budget" required>
+                <option value="">Select budget</option>
+                <option value="economy">Economy</option>
+                <option value="standard">Standard</option>
+                <option value="premium">Premium</option>
+              </select>
+            </label>
+
+            <label>
+              Trip type
+              <select id="tripType" required>
+                <option value="">Choose type</option>
+                <option value="beach">Beach</option>
+                <option value="mountain">Mountain</option>
+                <option value="city">City</option>
+                <option value="adventure">Adventure</option>
+                <option value="wildlife">Wildlife</option>
+                <option value="honeymoon">Honeymoon</option>
+              </select>
+            </label>
+
+            <label>
+              Duration (days)
+              <input id="days" type="number" min="2" max="14" value="5" required />
+            </label>
+
+            <label>
+              Travelers
+              <input id="travelers" type="number" min="1" max="10" value="2" required />
+            </label>
+          </div>
+
+          <button class="button" type="submit">Recommend My Package</button>
+        </form>
+
+        <article id="result" class="result hidden" aria-live="polite"></article>
+      </section>
+
+      <section class="features container">
+        <div class="feature">
+          <h3>Smart matching</h3>
+          <p>AI analyzes your description and priorities to suggest the most suitable plan.</p>
+        </div>
+        <div class="feature">
+          <h3>Flexible packages</h3>
+          <p>Options for solo trips, couples, families, and groups with transparent pricing.</p>
+        </div>
+        <div class="feature">
+          <h3>User-friendly journey</h3>
+          <p>Simple interface, fast recommendations, and clear itinerary highlights.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> MakeYourVacation. Crafted for happy travelers.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
